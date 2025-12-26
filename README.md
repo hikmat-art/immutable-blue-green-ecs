@@ -156,6 +156,4 @@ Files to review
 - Security: `terraform/security/` — IAM role and security groups.
 - ALB: `terraform/alb/` — load balancer, listener, and blue/green target groups.
 - ECS: `terraform/ecs/` — cluster, task definition, and blue/green services.
-- FinOps: `terraform/finops/` — AWS Budget and billing alarm.
-
-If you want any phrasing adjusted for a portfolio (short bio blurb, project tags, or measurable outcomes), tell me how you want to present it and I will tailor the text accordingly.
+- FinOps: `terraform/finops/` — AWS Budget and billing alarms.
