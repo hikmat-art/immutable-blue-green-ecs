@@ -33,7 +33,7 @@ terraform init
 terraform plan
 terraform apply
 ```
-
+IPORTANT NOTICE: Donot forget to apply (terraform destroy command) after successfull test, otherwise you can confront with un wanted AWS resources Costs.
 Blue/Green Switch
 
 Change ALB listener weights and apply Terraform.
@@ -141,8 +141,6 @@ This project is intentionally modular and explicit so it can be used as a learni
 - Run the full stack in a low-cost test account to observe blue/green switching.
 - Modify container images to use lightweight test images and experiment with scaling.
 - Inspect CloudWatch logs and the AWS Console to see how traffic moves between target groups.
-
-- IPORTANT NOTICE: Donot forget to apply (terraform destroy command) after successfull test, otherwise you can confront with un wanted AWS resources Costs.
   
 Attribution and next steps.
 
