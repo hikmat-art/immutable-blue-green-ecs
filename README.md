@@ -33,7 +33,7 @@ terraform init
 terraform plan
 terraform apply
 ```
-IPORTANT NOTICE: Donot forget to apply (terraform destroy command) after successfull test, otherwise you can confront with un wanted AWS resources Costs.
+
 Blue/Green Switch
 
 Change ALB listener weights and apply Terraform.
@@ -119,7 +119,7 @@ terraform plan
 ```bash
 terraform apply
 ```
-NOTICE:
+
 Blue/Green switch
 - To shift traffic from BLUE to GREEN, update the ALB listener weights (or update the target group weights in the `alb` module) and run `terraform apply`. For small-scale demos you can also manipulate weights in the AWS console, but for a controlled, auditable flow do it through Terraform and source control.
 
@@ -135,14 +135,16 @@ Recommendations for production hardening
 - Cost optimization: Consider using Fargate Spot or autoscaling policies for non-critical workloads and refine budget thresholds.
 
 Educational notes
+-----------------
 
 This project is intentionally modular and explicit so it can be used as a learning artifact. You can:
 
 - Run the full stack in a low-cost test account to observe blue/green switching.
 - Modify container images to use lightweight test images and experiment with scaling.
 - Inspect CloudWatch logs and the AWS Console to see how traffic moves between target groups.
-  
-Attribution and next steps.
+
+Attribution and next steps
+-------------------------
 
 This repository is my implementation and learning artifact demonstrating immutable blue/green deployments on ECS Fargate with FinOps basics. If you'd like, I can extend this with a CI/CD example, ACM-based TLS, or a secure remote-state backend for production readiness.
 
@@ -155,3 +157,5 @@ Files to review
 - ALB: `terraform/alb/` — load balancer, listener, and blue/green target groups.
 - ECS: `terraform/ecs/` — cluster, task definition, and blue/green services.
 - FinOps: `terraform/finops/` — AWS Budget and billing alarm.
+
+If you want any phrasing adjusted for a portfolio (short bio blurb, project tags, or measurable outcomes), tell me how you want to present it and I will tailor the text accordingly.
