@@ -158,4 +158,4 @@ Files to review
 - ECS: `terraform/ecs/` — cluster, task definition, and blue/green services.
 - FinOps: `terraform/finops/` — AWS Budget and billing alarm.
 
-If you want any phrasing adjusted for a portfolio (short bio blurb, project tags, or measurable outcomes), tell me how you want to present it and I will tailor the text accordingly.
+NOTICE: Remember to teardown the project if you apply the AWS services for tranning purposes to avoid un-wanted AWS costs 
